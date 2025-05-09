@@ -17,6 +17,7 @@ return new class extends Migration
             $table->foreignId('author_id');
             $table->foreignId('category_id');
             $table->foreignId('publisher_id');
+            $table -> integer('published_year') -> nullable();
             $table->timestamps();
         });
     }
